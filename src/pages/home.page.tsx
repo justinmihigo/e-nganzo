@@ -57,20 +57,20 @@ const HomePage: React.FC = () => {
   const trendingArtists = [
     {
       id: '1',
-      name: 'Maria Chen',
-      avatar: 'https://randomuser.me/api/portraits/women/44.jpg',
+      name: 'Mutesi Diane',
+      avatar: 'https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg',
       followers: 5482,
     },
     {
       id: '2',
-      name: 'Alex Rivera',
-      avatar: 'https://randomuser.me/api/portraits/men/35.jpg',
+      name: 'Mugisha Jean',
+      avatar: 'https://images.pexels.com/photos/3317434/pexels-photo-3317434.jpeg',
       followers: 3291,
     },
     {
       id: '3',
-      name: 'Emma Patel',
-      avatar: 'https://randomuser.me/api/portraits/women/32.jpg',
+      name: 'Uwase Marie',
+      avatar: 'https://images.pexels.com/photos/2516582/pexels-photo-2516582.jpeg',
       followers: 2845,
     },
   ];
@@ -122,12 +122,13 @@ const HomePage: React.FC = () => {
             <div className="p-4">
               <h3 className="font-bold text-lg">{artwork.title}</h3>
               <p className="text-gray-600 mb-2">by {artwork.artist}</p>
+              <p className="text-gray-600 text-sm mb-2 line-clamp-2">{artwork.story}</p>
               <div className="flex justify-between items-center">
-                <span className="font-bold">
-                  ${artwork.supportAmount}
+                <span className="text-sm text-gray-600">
+                  {artwork.supportAmount} supporters
                 </span>
                 <button className="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800">
-                  Buy Now
+                  Support
                 </button>
               </div>
             </div>

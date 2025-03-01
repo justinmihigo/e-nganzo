@@ -8,14 +8,16 @@ interface Artwork {
   title: string;
   artist: string;
   imageUrl: string;
-  price: number;
+  supportAmount: number;
   category: string;
+  description: string;
 }
 
 const ExplorePage: React.FC = () => {
   const [filters, setFilters] = useState({
     category: 'all',
-    priceRange: 'all',
+    supportRange: 'all',
+    description: '',
     sortBy: 'newest'
   });
 
@@ -25,49 +27,55 @@ const ExplorePage: React.FC = () => {
       id: '1',
       title: 'Abstract Harmony',
       artist: 'Jane Doe',
-      imageUrl: 'https://images.pexels.com/photos/2693212/pexels-photo-2693212.jpeg',
-      price: 299,
-      category: 'abstract'
+      imageUrl: 'https://images.pexels.com/photos/1585325/pexels-photo-1585325.jpeg',
+      supportAmount: 299,
+      category: 'abstract',
+      description: 'A vibrant exploration of color and emotion, expressing the harmony of chaos and order.'
     },
     {
       id: '2',
       title: 'Urban Landscape',
       artist: 'John Smith',
       imageUrl: 'https://images.pexels.com/photos/3052361/pexels-photo-3052361.jpeg',
-      price: 450,
-      category: 'cityscape'
+      supportAmount: 450,
+      category: 'cityscape',
+      description: 'A contemporary view of city life, capturing the energy and rhythm of urban spaces.'
     },
     {
       id: '3',
       title: 'Serene Nature',
       artist: 'Emily Chen',
       imageUrl: 'https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg',
-      price: 375,
-      category: 'landscape'
+      supportAmount: 375,
+      category: 'landscape',
+      description: `An intimate portrayal of nature's tranquility, inspired by traditional landscape techniques.`
     },
     {
       id: '4',
       title: 'Modern Minimalism',
       artist: 'Michael Brown',
       imageUrl: 'https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg',
-      price: 525,
-      category: 'minimal'
+      supportAmount: 525,
+      category: 'minimal',
+      description: 'A minimalist approach to form and space, reflecting on simplicity and essence.'
     },
     {
       id: '5',
       title: 'Vibrant Dreams',
       artist: 'Sarah Wilson',
       imageUrl: 'https://images.pexels.com/photos/1585325/pexels-photo-1585325.jpeg',
-      price: 399,
-      category: 'abstract'
+      supportAmount: 399,
+      category: 'abstract',
+      description: `A dreamlike journey through color and form, expressing the artist's inner visions.`
     },
     {
       id: '6',
       title: 'Ocean Waves',
       artist: 'David Lee',
       imageUrl: 'https://images.pexels.com/photos/1738434/pexels-photo-1738434.jpeg',
-      price: 450,
-      category: 'seascape'
+      supportAmount: 450,
+      category: 'seascape',
+      description: 'A powerful representation of ocean movements, celebrating the majesty of water.'
     }
   ];
 

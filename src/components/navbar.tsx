@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ShoppingCart, User, Search, Menu, X } from 'lucide-react';
+import enganzo from '../assets/enganzo full.png'
 // import { useAuth } from '../hooks/useAuth';
 // import { useCart } from '../hooks/useCart';
 
@@ -52,7 +53,7 @@ const Navbar: React.FC<NavbarProps> = ({ transparent = false }) => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/src/assets/enganzo full.png" 
+              src={enganzo} 
               alt="e-nganzo" 
               className="h-10 w-auto" 
             />

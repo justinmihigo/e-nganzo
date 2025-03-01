@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiMail, FiPhone, FiMapPin, FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from 'react-icons/fi';
 import { FaEthereum } from 'react-icons/fa';
-
+import enganzo from '../assets/enganzo full.png'
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           <div>
             <Link to="/" className="flex items-center mb-4">
               <img 
-                src="/src/assets/enganzo full.png" 
+                src={enganzo}
                 alt="e-nganzo" 
                 className="h-10 w-auto" 
               />

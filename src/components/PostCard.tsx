@@ -26,7 +26,7 @@ const PostCard: React.FC<PostCardProps> = ({
   category,
 }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 mb-4">
+    <div key={id} className="bg-white rounded-lg shadow-md p-6 mb-4">
       <div className="flex items-center mb-4">
         <Link to={`/artist/${author.id}`}>
           <img
